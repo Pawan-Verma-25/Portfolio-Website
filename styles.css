@@ -60,7 +60,21 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--primary-color);
+}
+
+.logo-text {
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--primary-color);
 }
@@ -751,6 +765,37 @@ body {
     color: var(--primary-color);
 }
 
+/* @media (max-width: 768px) {
+    /* ... your existing mobile styles ... */
+    
+    /* .logo-img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+    }
+} */ 
+
+@media (max-width: 768px) {
+    /* ... other styles ... */
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        font-size: 3rem;
+        margin: 0 auto 2rem auto;  /* Add this line */
+        display: flex;              /* Add this line */
+        align-items: center;        /* Add this line */
+        justify-content: center;    /* Add this line */
+    }
+}
 .footer-social {
     display: flex;
     justify-content: center;
