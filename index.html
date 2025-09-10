@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Kumar Verma - Data Analytics Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">PKV</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li><a href="#about" class="nav-link" onclick="showPage('about')">About</a></li>
+                <li><a href="#projects" class="nav-link" onclick="showPage('projects')">Projects</a></li>
+                <li><a href="#achievements" class="nav-link" onclick="showPage('achievements')">Achievements</a></li>
+                <li><a href="#services" class="nav-link" onclick="showPage('services')">Services</a></li>
+                <!-- <li><a href="#testimonials" class="nav-link" onclick="showPage('testimonials')">Testimonials</a></li> -->
+                <li><a href="#contact" class="nav-link" onclick="showPage('contact')">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌓</button></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <div id="home" class="page-section active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Pawan Kumar Verma</h1>
+                    <p class="tagline">Data Analyst | Business Insights | Turning Data into Decisions</p>
+                    <a href="#contact" class="cta-button" onclick="showPage('contact')">Hire Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brief Intro -->
+        <section class="brief-intro">
+            <div class="container">
+                <h2>Transforming Raw Data into Strategic Insights</h2>
+                <p>I'm a passionate Data Analyst with expertise in Python, SQL, and Power BI. Currently pursuing B.Tech Chemical Engineering at NIT Agartala, I bridge the gap between complex data and actionable business decisions.</p>
+                <a href="#about" class="cta-button" onclick="showPage('about')">Learn More About Me</a>
+            </div>
+        </section>
+
+        <!-- Key Highlights -->
+        <section class="highlights">
+            <div class="container">
+                <h2>What I Can Do</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="icon">🧹</div>
+                        <h3>Data Cleaning & Preparation</h3>
+                        <p>Transform messy data into clean, analysis-ready datasets using Python and advanced data manipulation techniques.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="icon">📊</div>
+                        <h3>Interactive Dashboards</h3>
+                        <p>Create compelling Power BI dashboards that tell your data's story and drive business decisions.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="icon">🔍</div>
+                        <h3>Market Insights & Analysis</h3>
+                        <p>Uncover hidden patterns and trends in your business data to identify new opportunities.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="icon">🎯</div>
+                        <h3>Predictive Modeling</h3>
+                        <p>Leverage machine learning algorithms to forecast trends and optimize business outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page-section">
+        <div class="container">
+            <div class="page-header">
+                <h1>About Me</h1>
+                <!-- <p>Get to know the person behind the data</p> -->
+            </div>
+            <div class="about-content">
+                <div class="profile-image">
+                        <img src="my photo.jpeg" alt="Profile Picture" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="fallback-text" style="display: none;">PV</div>
+                    </div>
+                <div class="about-text">
+                    <h2>Hello, I'm Pawan Kumar Verma</h2>
+                    <p>I'm a dedicated Data Analytics professional currently pursuing my B.Tech in Chemical Engineering from NIT Agartala (Batch 2026). My unique background combines technical engineering knowledge with advanced data science skills, allowing me to approach problems from both analytical and practical perspectives.</p>
+                    
+                    <h3>🎓 Education</h3>
+                    <p><strong>B.Tech in Chemical Engineering</strong><br>
+                    National Institute of Technology, Agartala<br>
+                    Expected Graduation: 2026</p>
+                    
+                    <h3>💻 Technical Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">PowerPoint</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                    
+                    <h3>🎯 My Passion</h3>
+                    <p>I'm passionate about bridging the gap between raw data and actionable insights. I believe that every dataset tells a story, and my job is to uncover that story and present it in a way that drives meaningful business decisions.</p>
+                    
+                    <!-- <button class="download-btn" onclick="downloadResume()">📄 Download Resume</button> -->
+                        <button class="download-btn" onclick="window.open('resume.pdf', '_blank')">
+                            📄 Download Resume
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Page -->
+    <div id="projects" class="page-section">
+        <div class="container">
+            <div class="page-header">
+                <h1>My Projects</h1>
+                <p>Showcasing my data analytics expertise through real-world applications</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">📈</div>
+                    <div class="project-content">
+                        <h3>Sales Performance DashBoard</h3>
+                        <p>Comprehensive analysis of customer trends and seasonal demand patterns using Python and SQL. Identified key revenue drivers and optimization opportunities.</p>
+                        <div class="project-tools">
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Pandas</span>
+                            <span class="tool-tag">Power Bi</span>
+                        </div>
+                        <button class="view-more-btn" onclick="viewProject('sales')">View More</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <h3>Retail Dashboard in Power BI</h3>
+                        <p>Built comprehensive interactive dashboards for sales insights, featuring real-time KPIs, trend analysis, and customer segmentation visualizations.</p>
+                        <div class="project-tools">
+                            <span class="tool-tag">Power BI</span>
+                            <span class="tool-tag">DAX</span>
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Excel</span>
+                        </div>
+                        <button class="view-more-btn" onclick="viewProject('retail')">View More</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">🔮</div>
+                    <div class="project-content">
+                        <h3>Predictive Analytics Model</h3>
+                        <p>Developed machine learning models to forecast product demand using regression analysis. Achieved 85% accuracy in demand prediction.</p>
+                        <div class="project-tools">
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">Scikit-learn</span>
+                            <span class="tool-tag">NumPy</span>
+                            <span class="tool-tag">Pandas</span>
+                        </div>
+                        <button class="view-more-btn" onclick="viewProject('predictive')">View More</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">⚗️</div>
+                    <div class="project-content">
+                        <h3>Process Optimization Study</h3>
+                        <p>Analyzed and documented the end-to-end development of an EMR system using Agile methodology, SDLC practices, and tools like JIRA, Confluence, Balsamiq, and Lucidchart for requirements, process flows, and wireframes.</p>
+                        <div class="project-tools">
+                            <span class="tool-tag">BRD</span>
+                            <span class="tool-tag">FRD</span>
+                            <span class="tool-tag">wireframes</span>
+                            <span class="tool-tag">Lucidchart</span>
+                            <span class="tool-tag">JIRA</span>
+
+                        </div>
+                        <button class="view-more-btn" onclick="viewProject('optimization')">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Page -->
+    <div id="achievements" class="page-section">
+        <div class="container">
+            <div class="page-header">
+                <h1>Key Courses Taken</h1>
+                <p>Foundational courses in my data analytics journey</p>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="achievements-section">
+                <h3>🏆 Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">📊</div>
+                        <h4>SQL for Data Analysis</h4>
+                        <p>Linkedin Learning - Advanced SQL techniques for data manipulation and analysis</p>
+                        <small>Issued: 2025</small>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">📈</div>
+                        <h4>Advanced Power Bi - DAX Language, Formulas , and Calculations</h4>
+                        <p>Linkedin Learning - Complete Power BI dashboard development and DAX mastery</p>
+                        <small>Issued: 2025</small>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🐍</div>
+                        <h4>Data Analysis Foundations</h4>
+                        <p>Linkedin Learning - Comprehensive Python programming for data analysis and ML</p>
+                        <small>Issued: 2025</small>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Awards
+            <div class="achievements-section">
+                <h3>🎖️ Awards & Recognition</h3>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon">🥇</div>
+                        <h4>Top 5 Data Analytics Intern</h4>
+                        <p>Recognized for outstanding performance during summer internship program</p>
+                        <small>Summer 2024</small>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🎓</div>
+                        <h4>Dean's List Academic Achievement</h4>
+                        <p>Consistent academic excellence at NIT Agartala with CGPA > 8.5</p>
+                        <small>Multiple Semesters</small>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">💡</div>
+                        <h4>Best Project Innovation Award</h4>
+                        <p>Chemical Engineering project incorporating data analytics solutions</p>
+                        <small>Academic Year 2023-24</small>
+                    </div>
+                </div>
+            </div>
+             -->
+            <!-- Milestones
+            <div class="achievements-section">
+                <h3>📊 Key Milestones</h3>
+                <div class="milestones-grid">
+                    <div class="milestone">
+                        <div class="milestone-number">3+</div>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-number">25+</div>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-number">15+</div>
+                        <p>Dashboards Built</p>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-number">10+</div>
+                        <p>Clients Served</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page-section">
+        <div class="container">
+            <div class="page-header">
+                <h1>My Services</h1>
+                <p>Comprehensive data analytics solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧹</div>
+                    <h3>Data Cleaning & Preparation</h3>
+                    <p>Transform messy, inconsistent data into clean, structured datasets ready for analysis. Includes data validation, deduplication, and quality assurance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Exploratory Data Analysis (EDA)</h3>
+                    <p>Comprehensive statistical analysis to uncover hidden patterns, trends, and insights in your data using advanced visualization techniques.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Business Intelligence Dashboards</h3>
+                    <p>Create interactive Power BI and Excel dashboards that provide real-time insights and enable data-driven decision making.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔮</div>
+                    <h3>Predictive & Prescriptive Analytics</h3>
+                    <p>Build machine learning models for forecasting, trend analysis, and optimization to help you plan for the future.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗄️</div>
+                    <h3>SQL Reporting & Automation</h3>
+                    <p>Design efficient database queries, automated reporting systems, and data pipeline solutions for streamlined operations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Business Process Optimization</h3>
+                    <p>Analyze operational data to identify bottlenecks, inefficiencies, and optimization opportunities in your business processes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Page
+    <div id="testimonials" class="page-section">
+        <div class="container">
+            <div class="page-header">
+                <h1>Client Testimonials</h1>
+                <p>What clients say about working with me</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Pawan's analytical skills are exceptional. He transformed our messy sales data into clear, actionable insights that helped us increase revenue by 20%. His Power BI dashboards are intuitive and visually appealing.
+                    </div>
+                    <div class="testimonial-author">Sarah Johnson</div>
+                    <div class="testimonial-role">Marketing Director, TechCorp Solutions</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Working with Pawan was a game-changer for our operations. His process optimization analysis saved us significant costs and improved our efficiency. Highly recommend his services.
+                    </div>
+                    <div class="testimonial-author">Raj Patel</div>
+                    <div class="testimonial-role">Operations Manager, Industrial Systems Ltd.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Pawan's predictive models helped us forecast demand accurately, reducing inventory costs by 15%. His technical expertise combined with clear communication makes him invaluable.
+                    </div>
+                    <div class="testimonial-author">Emily Chen</div>
+                    <div class="testimonial-role">Supply Chain Analyst, Global Retail Inc.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        Professional, reliable, and delivers quality work on time. Pawan's data cleaning and analysis helped us identify key customer segments we never knew existed.
+                    </div>
+                    <div class="testimonial-author">Michael Rodriguez</div>
+                    <div class="testimonial-role">Business Intelligence Lead, StartupXYZ</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Contact Page -->
+    <div id="contact" class="page-section">
+        <div class="container">
+            <div class="page-header">
+                <h1>Get In Touch</h1>
+                <p>Ready to transform your data? Let's discuss your project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            pawanvermanita123@gmail.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <strong>Phone</strong><br>
+                            +91-8429622435
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Location</strong><br>
+                            Gorakhpur, Uttar Pradesh, India
+                        </div>
+                    </div>
+                   <div class="social-links">
+                    <a href="https://www.linkedin.com/in/pawan-kumar-verma-415a15248/" class="social-link" title="LinkedIn" target="_blank">💼</a>
+                    <a href="https://github.com/Pawan-Verma-25" class="social-link" title="GitHub" target="_blank">💻</a>
+                    <a href="pawanvermanita123@gmail.com" class="social-link" title="Email">📧</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home" onclick="showPage('home')">Home</a>
+                <a href="#about" onclick="showPage('about')">About</a>
+                <a href="#projects" onclick="showPage('projects')">Projects</a>
+                <a href="#achievements" onclick="showPage('achievements')">Achievements</a>
+                <a href="#services" onclick="showPage('services')">Services</a>
+                <a href="#contact" onclick="showPage('contact')">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/pawan-kumar-verma-415a15248/" title="LinkedIn">💼</a>
+                <a href="https://github.com/Pawan-Verma-25" title="GitHub">💻</a>
+                <a href="mailto:pawanvermanita123@gmail.com" title="Email">📧</a>
+            </div>
+            <p>&copy; 2025 Pawan Kumar Verma | Built with ❤️ for Data Analytics</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
